@@ -11,8 +11,23 @@ public class Jungle {
         Prey prey = new Prey();
         Prey prey2 = new Prey(60,57,29);
 
-        prey.searchForFood();
-        prey2.searchForFood();
+        Prey newBornPrey = prey.mate(prey2);
+        Prey newBornPrey2 = prey2.mate(prey);
+
+//        prey.eat();
+//        prey2.eat();
+//        newBornPrey.eat();
+//        newBornPrey2.eat();
+//
+        prey.rest();
+        prey2.rest();
+
+        Prey.s_iMaxAge = 70;
+
+        prey.rest();
+        prey2.rest();
+
+        int age = prey.m_iAge;
     }
 
 
