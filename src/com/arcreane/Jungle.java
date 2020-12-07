@@ -3,6 +3,14 @@ package com.arcreane;
 public class Jungle {
 
     public static void main(String[] args) {
+        int[] intArray = new int[5];
+        Predator[] predArray = new Predator[5];
+        for (int i = 0; i < predArray.length ; i++) {
+            predArray[i] = new Predator((int) (Math.random() * 100),
+                    (int) (Math.random() * 100),
+                    (int) (Math.random() * 100));
+        }
+
         Predator predator = new Predator();
         Predator predator2 = new Predator(90,35,42);
 
